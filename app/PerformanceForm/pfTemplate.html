@@ -1,94 +1,118 @@
 <form class="form-horizontal" role="form">
 
+<!--Appraisee Details-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Appraisee Information</h3>
+        </div>
 
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Appraisee Information</h3>
+        <div>
+            <label for="fullName" class="col-sm-3 control-label">Appraisee Name</label>
+            <div class="col-sm-3">
+                <input type="text" id="fullName" name="fullName" class="form-control" ng-model="employee.adName"/>
             </div>
-    <div class="form-group">
-        <label for="fullName" class="col-sm-3 control-label">Appraisee Name</label>
-        <div class="col-sm-3">
-        <input type="text" id="fullName" name="fullName" class="form-control" ng-model="employee.adName"/>
+            <label for="sapNumber" class="col-sm-3 control-label">SAP Number</label>
+            <div class="col-sm-3">
+                <input type="text" id="sapNumber" name="sapNumber" class="form-control" ng-model="employee.sapNumber"/>
+            </div>
         </div>
 
+        <div class="form-group">
+            <label for="fullName" class="col-sm-3 control-label">Appraiser Name</label>
 
-
-
-        <label for="fullName" class="col-sm-3 control-label">SAP Number</label>
-        <div class="col-sm-3">
-            <input type="text" id="fullName" name="fullName" class="form-control" ng-model="employee.adName"/>
+            <div class="col-sm-9">
+                <input type="text" id="fullName" name="fullName" class="form-control" ng-model="appraiserName"/>
+            </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        <label for="fullName" class="col-sm-3 control-label">SAP Number</label>
-        <div class="col-sm-3">
-            <input type="text" id="fullName" name="fullName" class="form-control" ng-model="employee.adName"/>
-        </div>
-    </div>
+        <div class="form-group">
+            <label for="serviceLine" class="col-sm-3 control-label">Department</label>
+            <div class="col-sm-9">
+                <select name="serviceLine" id="serviceLine" class="form-control">
+                    <option>Audit</option>
+                    <option>Consulting</option>
+                    <option>Corporate Finance</option>
+                    <option>ICS</option>
+                    <option>Tax</option>
 
-    <div class="form-group">
-        <label for="fullName" class="col-sm-3 control-label">Appraiser Name</label>
-        <div class="col-sm-9">
-            <input type="text" id="fullName" name="fullName" class="form-control" ng-model="appraiserName"/>
-        </div>
-    </div>
-
-
-
-    <div class="form-group">
-        <label for="serviceLine" class="col-sm-3 control-label">Department</label>
-        <div class="col-sm-9">
-            <select name="serviceLine" id="serviceLine" class="form-control">
-                <option>Audit</option>
-                <option>Consulting</option>
-                <option>Corporate Finance</option>
-                <option>ICS</option>
-                <option>Tax</option>
-
-            </select>
+                </select>
+            </div>
         </div>
     </div>
 
-        </div>
+    <!--Quality Guidance-->
     <div class="panel panel-primary">
         <div class="panel-heading">
             <h3 class="panel-title">Quality Guidance</h3>
         </div>
 
+
         <div class="form-group">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-9">
 
 
-                <div class="radio">
-                    <label><input type="radio" name="payRollType" value="w2"/>W-2</label>
+
+                <div class="checkbox" ng-controller="ModalDemoCtrl">
+                    <label><input type="checkbox" value="statAudit"/>Are you likely to participate in any
+                        statutory audit activity during this performance year?</label>
+                    <button class="btn btn-primary" ng-click="open()">More info</button>
                 </div>
-                <div class="radio">
-                    <label><input type="radio" name="payRollType" value="ten99"/>1099</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="payRollType" value="none"/>None</label>
-                </div>
+
             </div>
         </div>
-    </div>
 
+
+
+    <!--Objectives-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Objectives</h3>
+        </div>
+        <br/>
+        <button class="btn btn-primary" ng-click="">Add Quality Objective</button>
+        <button class="btn btn-primary" ng-click="">Add Relationships Objective</button>
+        <button class="btn btn-primary" ng-click="">Add Delivering Objective</button>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th width="200">Objective Type</th>
+                <th width="200">Some Header</th>
+                <th width="200">Some Header</th>
+                <th width="200"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>column 1</td>
+                <td>column 2</td>
+                <td>column 3</td>
+                <td><button class="btn btn-primary">Edit Objective</button></td>
+            </tr>
+            <tr>
+                <td>column 1</td>
+                <td>column 2</td>
+                <td>column 3</td>
+                <td><button class="btn btn-primary">Edit Objective</button></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
 
     <div class="form-group">
         <label for="notes" class="col-sm-3 control-label">Notes</label>
+
         <div class="col-sm-9">
             <textarea name="notes" id="notes" class="form-control" cols="40" rows="5"></textarea>
         </div>
     </div>
 
 
-
     <fieldset>
-    <legend>Perks</legend>
-    <div class="form-group">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-9">
+        <legend>Perks</legend>
+        <div class="form-group">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-9">
 
                 <div class="checkbox">
                     <label><input type="checkbox" value="perkCar"/>Company Car</label>
@@ -99,16 +123,56 @@
                 <div class="checkbox">
                     <label><input type="checkbox" value="perkStock"/>Stock Options</label>
                 </div>
+            </div>
         </div>
-    </div>
-</fieldset>
-
-
-
+    </fieldset>
 
 
     <br/>
-<div class="col-sm-offset-3">
-    <input type="submit" class="btn btn-primary" value="submit"/>
-</div>
+
+    <div class="col-sm-offset-3">
+        <input type="submit" class="btn btn-primary" value="submit"/>
+    </div>
 </form>
+
+<!-- Modals-->
+
+<div ng-controller="ModalDemoCtrl">
+
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">People who provide statutory audit services:</h3>
+        </div>
+
+        <div class="modal-body">
+            <div>
+                <ul>
+                    <li>Are expected to establish suitable quality objectives, including exercising professional
+                        scepticism, and be responsive to the needs of the entities they audit, but should not
+                        set objectives, or be evaluated against or remunerated on the selling of other services
+                        to entities they audit. [Deloitte Policies Manual 3320 5.37a]
+                    </li>
+                    <li>Take care that objectives do not outline how you intend to make efficiency savings (e.g.
+                        reducing RRR) without explaining how quality will be maintained. If you make reference
+                        to RRR savings in the "self-populated metrics" section of the form, you need to add a
+                        corresponding objective in the main body of the form that explains how quality will be
+                        maintained.
+                    </li>
+                    <li>Should be careful to be explicit about audit versus non-audit clients in objectives and
+                        year end comments.
+                    </li>
+                    <li>Engagement Managers should also document a response to any adverse regulatory and
+                        Practice Review Scores and set objectives accordingly.
+                    </li>
+                    <li>For managers and above, Red or Amber flags on the audit quality & compliance dashboard
+                        should be referred to, when setting objectives in relation to audit quality.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+</div>

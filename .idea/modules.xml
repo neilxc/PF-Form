@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Development/PF-Form/.idea/PF-Form.iml" filepath="$USER_HOME$/Development/PF-Form/.idea/PF-Form.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PFForm.iml" filepath="$PROJECT_DIR$/.idea/PFForm.iml" />
     </modules>
   </component>
 </project>
