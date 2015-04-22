@@ -1,0 +1,114 @@
+<form class="form-horizontal" role="form">
+
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Appraisee Information</h3>
+            </div>
+    <div class="form-group">
+        <label for="fullName" class="col-sm-3 control-label">Appraisee Name</label>
+        <div class="col-sm-3">
+        <input type="text" id="fullName" name="fullName" class="form-control" ng-model="employee.adName"/>
+        </div>
+
+
+
+
+        <label for="fullName" class="col-sm-3 control-label">SAP Number</label>
+        <div class="col-sm-3">
+            <input type="text" id="fullName" name="fullName" class="form-control" ng-model="employee.adName"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="fullName" class="col-sm-3 control-label">SAP Number</label>
+        <div class="col-sm-3">
+            <input type="text" id="fullName" name="fullName" class="form-control" ng-model="employee.adName"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="fullName" class="col-sm-3 control-label">Appraiser Name</label>
+        <div class="col-sm-9">
+            <input type="text" id="fullName" name="fullName" class="form-control" ng-model="appraiserName"/>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="serviceLine" class="col-sm-3 control-label">Department</label>
+        <div class="col-sm-9">
+            <select name="serviceLine" id="serviceLine" class="form-control">
+                <option>Audit</option>
+                <option>Consulting</option>
+                <option>Corporate Finance</option>
+                <option>ICS</option>
+                <option>Tax</option>
+
+            </select>
+        </div>
+    </div>
+
+        </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Quality Guidance</h3>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-9">
+
+
+                <div class="radio">
+                    <label><input type="radio" name="payRollType" value="w2"/>W-2</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="payRollType" value="ten99"/>1099</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="payRollType" value="none"/>None</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="notes" class="col-sm-3 control-label">Notes</label>
+        <div class="col-sm-9">
+            <textarea name="notes" id="notes" class="form-control" cols="40" rows="5"></textarea>
+        </div>
+    </div>
+
+
+
+    <fieldset>
+    <legend>Perks</legend>
+    <div class="form-group">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-9">
+
+                <div class="checkbox">
+                    <label><input type="checkbox" value="perkCar"/>Company Car</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="perkSixWeeks"/>Six Weeks</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="perkStock"/>Stock Options</label>
+                </div>
+        </div>
+    </div>
+</fieldset>
+
+
+
+
+
+    <br/>
+<div class="col-sm-offset-3">
+    <input type="submit" class="btn btn-primary" value="submit"/>
+</div>
+</form>
