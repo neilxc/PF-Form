@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script src="lib/jquery-1.9.0.min.js"></script>
+
+<div id="test1">
+<div id="templatemo_content"><h2>Audit Performance Management Form (UK Only)</h2>
+    <div class="product_box margin_r40"><div class="thumb_wrapper"><a href="/audit/performance/SitePages/AppraiseePage.aspx"><img alt="image 1" src="/audit/performance/SiteAssets/appraisee.jpg"/></a></div>
+        <h3 style="height: 60px">Access your 2014/15 performance management form</h3>
+        <p style="height: 42px">Click here to set objectives, add commentary against them or complete your year-end comments.</p></div>
+    <div class="product_box margin_r40"><div class="thumb_wrapper"><a href="/audit/performance/SitePages/AppraiserPage.aspx"><img alt="image 2" src="/audit/performance/SiteAssets/appraiser.jpg"/></a></div>
+        <h3 style="height: 60px">Approve your appraisee&#39;s 2014/15 performance management form</h3>
+        <p style="height: 42px">If you are an appraiser, click here to review your appraisee&#39;s objectives or year-end comments.</p></div>
+    <div class="product_box margin_r40"><div class="thumb_wrapper"><a href="/audit/performance/SitePages/RecallForm.aspx"><img alt="image 3" src="/audit/performance/SiteAssets/recall.jpg"/></a></div>
+        <h3 style="height: 60px">Recall my 2014/15 performance management form</h3>
+        <p style="height: 42px">If you are an appraisee and need to make a change to your form click here to recall it back from the appraiser.</p></div>
+    <div class="product_box"><div class="thumb_wrapper" style="height: 158px"><a href="/audit/performance/SitePages/HelpPage.aspx"><img alt="image 4" src="/audit/performance/SiteAssets/help.jpg"/></a></div>
+        <h3 style="height: 40px">Get help</h3>
+        <p style="height: 62px">Click here for assistance with completing this form</p></div>
+    <div class="cleaner_h20">&#160;</div>
+    <div class="cleaner"></div></div>
+</div>
+
+<div id="test2" >
+    <div id="templatemo_content"><h2>Audit Performance Management Form (UK Only)</h2>
+        <div class="product_box margin_r40"><div class="thumb_wrapper"><a href="/audit/performance/SitePages/AppraiseePage.aspx"><img alt="image 1" src="/audit/performance/SiteAssets/appraisee.jpg"/></a></div>
+            <h3 style="height: 60px">Access your 2014/15 performance management form</h3>
+            <p style="height: 42px">Click here to set objectives, add commentary against them or complete your year-end comments.</p></div>
+        <div class="product_box margin_r40"><div class="thumb_wrapper"><a href="/audit/performance/SitePages/AppraiserPage.aspx"><img alt="image 2" src="/audit/performance/SiteAssets/appraiser.jpg"/></a></div>
+            <h3 style="height: 60px">Approve your appraisee&#39;s 2014/15 performance management form</h3>
+            <p style="height: 42px">If you are an appraiser, click here to review your appraisee&#39;s objectives or year-end comments.</p></div>
+        <div class="product_box margin_r40"><div class="thumb_wrapper"><a href="/audit/performance/SitePages/RecallForm.aspx"><img alt="image 3" src="/audit/performance/SiteAssets/recall.jpg"/></a></div>
+            <h3 style="height: 60px">Recall my 2014/15 performance management form</h3>
+            <p style="height: 42px">If you are an appraisee and need to make a change to your form click here to recall it back from the appraiser.</p></div>
+        <div class="product_box"><div class="thumb_wrapper" style="height: 158px"><a href="/audit/performance/SitePages/HelpPage.aspx"><img alt="image 4" src="/audit/performance/SiteAssets/help.jpg"/></a></div>
+            <h3 style="height: 40px">Get help</h3>
+            <p style="height: 62px">Click here for assistance with completing this form</p></div>
+        <div class="cleaner_h20">&#160;</div>
+        <div class="cleaner"></div></div>
+</div>
+<button>2015</button>
+
+<script>
+    $("test2").hide();
+    $("button").click(function(){
+        $("#test1").hide(1000);
+        $("#test2").show(500);
+    });
+</script>
+
+</body>
+</html>
